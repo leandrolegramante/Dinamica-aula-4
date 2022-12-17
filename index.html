@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de remedios</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800;900&family=Raleway:wght@200;400;600;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cadastro <br> de Medicamentos</a></li>
+            <li><a href="#">Cadastro <br> de vacina</a></li>
+            <li><a href="#">Cadastro <br> de Cosmeticos</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img id="logo" src="img/logo.png" alt="logo CCXP">
+        <div id="title">
+            <h1>Cadastro de Medicamentos</h1>
+            <h2>Farmácia da Gente</h2>
+        </div>
+    </header>
+    <section id="sec-form" >
+        <div id="form">
+            <form onsubmit="addMed()">
+                <label for="medName">Nome do Medicamento</label>
+                <input autocomplete="off" type="text" required id="fname" name="medName">
+                <label for="medQtd">Quantidade Disponível</label>
+                <input autocomplete="off" required id="fqtd"  name="medQtd" type="text">
+                <label for="metClass">Classe de Medicamentos</label>
+                <input autocomplete="off" required id="fclass" name="metClass" type="text">
+                <button class="submit-button" type="submit" id="button">Cadastrar</button>
+            </form>
+        </div>
+        <div id="table">
+            <table id="dataTable">
+                <tr>
+                    <th>ID</th>
+                    <th>Medicamentos</th>
+                    <th>Quantidade</th>
+                    <th>Classe de Medicamentos</th>
+                    <th>Remover</th>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
